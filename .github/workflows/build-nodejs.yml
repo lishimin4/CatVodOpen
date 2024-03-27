@@ -17,6 +17,8 @@ jobs:
       working-directory: nodejs
       run: |
         npm i
+        npm i lodash
+        npm install --save-exact --save-dev esbuild
         npm run build
         
     - name: Archive dist
